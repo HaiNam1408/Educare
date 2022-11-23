@@ -1,0 +1,115 @@
+{
+    "categories": [
+        {
+            "title": "Computer Science Sector", 
+            "description": "The basics of computer science. Computer science is the study of computers and how they work, including software, hardware, and algorithms.",
+            "image": "https://courses.msqfon.com/wp-content/uploads/2021/03/program-bachelor-of-science-in-computer-science-1920x1080-1.jpg" 
+        },
+        {
+            "title": "Data Sector", 
+            "description": "The data science lifecycle involves various roles, tools, and processes, which enables analysts to glean actionable insights.",
+            "image": "https://d2xtbylwu97mzb.cloudfront.net/blog/tecnologia/wp-content/uploads/2020/09/Profesiones-que-requieren-un-master-para-trabajar-en-Espana-16-812x447.png?x14782" 
+        },
+        {
+            "title": "Design Sector", 
+            "description": "Design Sector designs and re-imagines human interactions with an eye for details and a soul for the bigger picture.",
+            "image": "https://i.pinimg.com/736x/63/b9/90/63b9909bd10c523dbadff59fdcc04645.jpg" 
+        },
+        {
+            "title": "Mobile Sector", 
+            "description": "Mobile subscriptions in Africa are set to rise to 1.61 billion by the end of 2028, a compound annual growth rate of 4% for 2021-2028.",
+            "image": "https://tse1.mm.bing.net/th?id=OIP.LycaP2YlmC0I-uPo76dQegHaE8&pid=Api&P=0" 
+        },
+        {
+            "title": "Machine Learning Sector", 
+            "description": "Machine learning (ML) is transforming education and fundamentally changing teaching, learning, and research.",
+            "image": "https://www.pandora--uk.co.uk/wp-content/uploads/2019/08/machine-learning.jpg" 
+        },
+        {
+            "title": "Blockchain Sector", 
+            "description": "A blockchain is a distributed database or ledger that is shared among the nodes of a computer network.",
+            "image": "https://tse3.mm.bing.net/th?id=OIP.nEqipo356dFp34Q2_xfOWgHaD3&pid=Api&P=0" 
+        }
+    ],
+
+    "courses": [
+        { 
+            "title": "Object-oriented programming with Python.", 
+            "star": 4, 
+            "thumb": "https://imgv2-2-f.scribdassets.com/img/word_document/279964119/original/6a3dbd90c8/1585736009?v=1", 
+            "class": 40, 
+            "time": "3 Months", 
+            "cost": 33, 
+            "author_name": "Jonh Biden",
+            "author_thumb": "https://www.twincities.com/wp-content/uploads/2021/01/AP21020625466866-1.jpg?w=1024"
+        },
+        { 
+            "title": "Java data structures and algorithms.", 
+            "star": 5,
+            "thumb": "http://www3.alibris-static.com/data-structures-and-algorithms-made-easy-in-java-data-structure-and-algorithmic-puzzles-second-edition/isbn/9781468101270_l.jpg", 
+            "class": 20, 
+            "time": "2 Months", 
+            "cost": 100, 
+            "author_name": "Nolan Pham",
+            "author_thumb": "https://media-exp1.licdn.com/dms/image/C4E03AQGWyeyvVbkNLw/profile-displayphoto-shrink_800_800/0/1638025914655?e=1674691200&v=beta&t=luwifAZlnut0u_FNB4EOfvymEakDtfP2YP0uUUObNzA"
+        },
+        { 
+            "title": "Open source programming with Nodejs.", 
+            "star": 2, 
+            "thumb": "https://raw.githubusercontent.com/waldemarnt/building-testable-apis-with-nodejs/master/title_page.jpg", 
+            "class": 42,
+            "time": "5 Months", 
+            "cost": 75,
+            "author_name": "kawamaski",
+            "author_thumb": "https://cdn.anisearch.com/images/character/screen/13/13746/full/92129.jpg"
+        },
+        { 
+            "title": "Web design course for the beginner to higher.", 
+            "star": 3, 
+            "thumb": "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+            "class": 30, 
+            "time": "3 Months", 
+            "cost": 50, 
+            "author_name": "Matt Henry",
+            "author_thumb": "https://images.pexels.com/photos/12482157/pexels-photo-12482157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+    ],
+
+    "comments": [
+        { 
+            "avatar": "https://media.bongda.com.vn/files/thanhdat.to/2017/10/24/865461394-1131.jpg",
+            "name": "Cristiano Ronaldo",
+            "star": 5,
+            "job": "Professional soccer player",
+            "comment": "It's so easy to buy the courses I like. I also love the ability to create my own courses. I am planning to create a soccer course!"
+        },
+        { 
+            "avatar": "https://chuyensiaothun.com.vn/wp-content/uploads/i5404-ao-thun-unisex-nam-in-hinh-chan-dung-nguoi-dan-ong-aaaa-5733.jpg",
+            "name": "Edwin Reyes",
+            "star": 4,
+            "job": "Student of web design",
+            "comment": "I have loved that it's giving me the opportunity to learn at my own pace and it's also super cost effective!"
+        },
+        { 
+            "avatar": "https://phunuhiendai.vn/wp-content/uploads/2014/11/Chan-dung-nghe-si-tri-Nguyen.jpg",
+            "name": "Ping Chilling",
+            "star": 5,
+            "job": "Professional soccer player",
+            "comment": "I love this online learning platform because I am planning to create a soccer course and start making money on the platform!"
+        },
+        { 
+            "avatar": "https://tse3.mm.bing.net/th?id=OIP.7ajt4BSxwYnjvWEwmX-2ygHaHa&pid=Api&P=0",
+            "name": "Lee Min Ho",
+            "star": 5,
+            "job": "Famous Actor",
+            "comment": "I'm an actor but I still want to learn something new every day. This website is really great at helping me achieve my long-standing desire. I will recommend to my friends to use it."
+        },
+        { 
+            "avatar": "https://cdn.idntimes.com/content-images/community/2021/01/fromandroid-71023c07b7f2dda1131bb1c0c417ac1f.jpg",
+            "name": "Lee Kwang-su",
+            "star": 3,
+            "job": "Professional soccer player",
+            "comment": "It's unbelievable that there is such a good online learning platform that I didn't know about. I am so impressed by this amazing platform!"
+        }
+    ]
+}
