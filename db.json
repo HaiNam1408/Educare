@@ -72,6 +72,86 @@
             "cost": 50, 
             "author_name": "Matt Henry",
             "author_thumb": "https://images.pexels.com/photos/12482157/pexels-photo-12482157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        { 
+            "title": "Object-oriented programming with Python.", 
+            "star": 4, 
+            "thumb": "https://imgv2-2-f.scribdassets.com/img/word_document/279964119/original/6a3dbd90c8/1585736009?v=1", 
+            "class": 40, 
+            "time": "3 Months", 
+            "cost": 33, 
+            "author_name": "Jonh Biden",
+            "author_thumb": "https://www.twincities.com/wp-content/uploads/2021/01/AP21020625466866-1.jpg?w=1024"
+        },
+        { 
+            "title": "Java data structures and algorithms.", 
+            "star": 5,
+            "thumb": "http://www3.alibris-static.com/data-structures-and-algorithms-made-easy-in-java-data-structure-and-algorithmic-puzzles-second-edition/isbn/9781468101270_l.jpg", 
+            "class": 20, 
+            "time": "2 Months", 
+            "cost": 100, 
+            "author_name": "Nolan Pham",
+            "author_thumb": "https://media-exp1.licdn.com/dms/image/C4E03AQGWyeyvVbkNLw/profile-displayphoto-shrink_800_800/0/1638025914655?e=1674691200&v=beta&t=luwifAZlnut0u_FNB4EOfvymEakDtfP2YP0uUUObNzA"
+        },
+        { 
+            "title": "Open source programming with Nodejs.", 
+            "star": 2, 
+            "thumb": "https://raw.githubusercontent.com/waldemarnt/building-testable-apis-with-nodejs/master/title_page.jpg", 
+            "class": 42,
+            "time": "5 Months", 
+            "cost": 75,
+            "author_name": "kawamaski",
+            "author_thumb": "https://cdn.anisearch.com/images/character/screen/13/13746/full/92129.jpg"
+        },
+        { 
+            "title": "Web design course for the beginner to higher.", 
+            "star": 3, 
+            "thumb": "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+            "class": 30, 
+            "time": "3 Months", 
+            "cost": 50, 
+            "author_name": "Matt Henry",
+            "author_thumb": "https://images.pexels.com/photos/12482157/pexels-photo-12482157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        { 
+            "title": "Open source programming with Nodejs.", 
+            "star": 2, 
+            "thumb": "https://raw.githubusercontent.com/waldemarnt/building-testable-apis-with-nodejs/master/title_page.jpg", 
+            "class": 42,
+            "time": "5 Months", 
+            "cost": 75,
+            "author_name": "kawamaski",
+            "author_thumb": "https://cdn.anisearch.com/images/character/screen/13/13746/full/92129.jpg"
+        },
+        { 
+            "title": "Web design course for the beginner to higher.", 
+            "star": 3, 
+            "thumb": "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+            "class": 30, 
+            "time": "3 Months", 
+            "cost": 50, 
+            "author_name": "Matt Henry",
+            "author_thumb": "https://images.pexels.com/photos/12482157/pexels-photo-12482157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        { 
+            "title": "Open source programming with Nodejs.", 
+            "star": 2, 
+            "thumb": "https://raw.githubusercontent.com/waldemarnt/building-testable-apis-with-nodejs/master/title_page.jpg", 
+            "class": 42,
+            "time": "5 Months", 
+            "cost": 75,
+            "author_name": "kawamaski",
+            "author_thumb": "https://cdn.anisearch.com/images/character/screen/13/13746/full/92129.jpg"
+        },
+        { 
+            "title": "Web design course for the beginner to higher.", 
+            "star": 3, 
+            "thumb": "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+            "class": 30, 
+            "time": "3 Months", 
+            "cost": 50, 
+            "author_name": "Matt Henry",
+            "author_thumb": "https://images.pexels.com/photos/12482157/pexels-photo-12482157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         }
     ],
 
@@ -91,7 +171,7 @@
             "comment": "I have loved that it's giving me the opportunity to learn at my own pace and it's also super cost effective!"
         },
         { 
-            "avatar": "https://phunuhiendai.vn/wp-content/uploads/2014/11/Chan-dung-nghe-si-tri-Nguyen.jpg",
+            "avatar": "https://i.redd.it/vuq5odsdzry71.png",
             "name": "Ping Chilling",
             "star": 5,
             "job": "Professional soccer player",

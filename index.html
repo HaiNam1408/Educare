@@ -25,33 +25,50 @@
 <body>
 
     <div class="container_nav">
-        <!-- header -->
-        <header class="header">
-            <div class="header_nav row">
+        <!-- header-nav -->
+        <div class="header_nav row">
+            <div class="row">
+                <div class="list-icon">
+                    <i class="bi bi-list"></i>
+                </div>
                 <a href="#" class="row"><img src="./warehouse/img/logo.png">
                     <h4>Educare</h4>
                 </a>
-
-                <ul class="header_list row">
-                    <li class="header_item">
-                        <h4 class="header_textBtn">Home</h4>
-                    </li>
-                    <li class="header_item">
-                        <h4>Courses</h4>
-                    </li>
-                    <li class="header_item">
-                        <h4>Features</h4>
-                    </li>
-                    <li class="header_item">
-                        <h4>About Us</h4>
-                    </li>
-                </ul>
-
-                <div class="form_nav row">
-                    <button class="login">Sign In</button>
-                    <button class="register">Sign Up</button>
-                </div>
             </div>
+
+            <ul class="header_list row">
+                <div class="close_header__list">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <li class="header_item">
+                    <a href="#header">
+                        <h4 class="header_textBtn">Home</h4>
+                    </a>
+                </li>
+                <li class="header_item">
+                    <a href="#courses">
+                        <h4>Courses</h4>
+                    </a>
+                </li>
+                <li class="header_item">
+                    <a href="#featured">
+                        <h4>Features</h4>
+                    </a>
+                </li>
+                <li class="header_item">
+                    <a href="#about-us">
+                        <h4>About Us</h4>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="form_nav row">
+                <button class="login">Sign In</button>
+                <button class="register">Sign Up</button>
+            </div>
+        </div>
+        <!-- introduce -->
+        <header id="header" class="header">
 
             <div class="header_banner">
                 <img src="./warehouse/img/banner.png">
@@ -71,7 +88,7 @@
         </header>
 
         <!-- navbar -->
-        <div class="navbar">
+        <div id="courses" class="navbar">
             <div class="navbar_top row">
                 <div class="nabar_top__left">
                     <h1 class="bold">Start your <br> learning today.</h1>
@@ -90,7 +107,7 @@
         </div>
 
         <!-- featured -->
-        <div class="featured">
+        <div id="featured" class="featured">
             <div class="featured_nav">
                 <h1 class="bold">Featured courses</h1>
                 <p>Start your learning today. Explore all the categories <br>
@@ -100,7 +117,8 @@
 
                 </ul>
 
-                <button class="featured_submit">See All Courses</button>
+                <button class="show-all">See All Courses</button>
+                <button class="hide-away d-none">Hide The Courses</button>
             </div>
         </div>
 
@@ -176,7 +194,7 @@
         </div>
 
         <!-- newSletter -->
-        <div class="newSletter fb_btn">
+        <div id="about-us" class="newSletter fb_btn">
             <h1 class="tx_btn bold">New Sletter</h1>
             <p class="cx_btn">Start your learning today. Explore all the categories <br>
                 and choose the best for you.</p>
@@ -267,21 +285,30 @@
         <!-- form_signIn -->
         <!--  -->
         <div class="modal_signIn">
-            <div class="close_modal_signIn">
-                <i class="bi bi-x-lg"></i>
-            </div>
 
             <form id="form_signIn">
+                <div class="close_modal_signIn">
+                    <i class="bi bi-x-lg"></i>
+                </div>
                 <div class="form_signIn__left">
                     <h1>Hello!</h1>
                     <h5>Sign into Your account</h5>
 
-                    <input type="text email" placeholder="E-mail or username">
-                    <input type="password" placeholder="Password">
+                    <div class="form-group">
+                        <input id="email" name="email" type="text" placeholder="Email" class="form-control" /> <br>
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group password">
+                        <input id="password" name="password" type="password" placeholder="Password"
+                            class="form-control input-password" />
+                        <i class="fa-regular fa-eye-slash"></i> <br>
+                        <span class="form-message"></span>
+                    </div>
 
                     <div class="form_signIn__lg row">
                         <i class="bi bi-check2-circle  checkpoin"> Remember me</i>
-                        <a href="#">Forgot password?</a>
+                        <a class="forget-password" href="">Forgot password?</a>
                     </div>
 
                     <button id="signIn" type="submit">SIGN IN</button>
@@ -307,26 +334,46 @@
         <!-- register_form -->
         <!--  -->
         <div class="modal_register">
-            <div class="close_modal_register">
-                <i class="bi bi-x-lg"></i>
-            </div>
 
             <form id="register_form">
+                <div class="close_modal_register">
+                    <i class="bi bi-x-lg"></i>
+                </div>
                 <div class="register_form__left">
                     <h1>Hello!</h1>
                     <h5>Create your account</h5>
 
-                    <input type="text" placeholder="User name">
-                    <input type="email" placeholder="E-mail">
-                    <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Enter the password">
+                    <div class="form-group">
+                        <input id="fullname" name="fullname" placeholder="Fullname" type="text" class="form-control" />
+                        <br>
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input id="email" name="email" type="text" placeholder="Email" class="form-control" /> <br>
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group password">
+                        <input id="password" name="password" placeholder="Password" type="password"
+                            class="form-control input-password" />
+                        <i class="fa-regular fa-eye-slash"></i> <br>
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group password">
+                        <input id="password_confirmation" name="password_confirmation" placeholder="Password confirm"
+                            type="password" class="form-control input-password" />
+                        <i class="fa-regular fa-eye-slash"></i> <br>
+                        <span class="form-message"></span>
+                    </div>
 
                     <button id="register" type="submit">REGISTER</button>
 
                     <h4>Do you already have an account? <a class="login_btn" href="#">Login</a></h4>
                 </div>
                 <div class="register_form__right">
-                    <h1>Signup And Get:</h1>
+                    <h1>Sign up And Get:</h1>
 
                     <li class="row">
                         <i class="bi bi-check-all"></i>
@@ -363,7 +410,9 @@
 
 
     <!-- js -->
+    <script src="./warehouse/js/validator.js"></script>
     <script src="./warehouse/js/script.js"></script>
+
 </body>
 
 </html>

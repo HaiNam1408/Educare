@@ -42,6 +42,9 @@
     --tr-4s: .4s ease;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 .container_nav {
     z-index: 1000;
     /* opacity: 0; */
@@ -55,14 +58,24 @@
     width: 100%;
     height: 700px;
     background: #F8F7F1;
+    position: relative;
     /* border-bottom: 1px solid #000; */
 }
-.header .header_nav {
-    width: 80%;
+
+.list-icon,
+.close_header__list {
+    display: none;
+}
+.header_nav {
+    position: fixed;
+    top: 0;
+    background: #F8F7F1;
+    width: 100%;
     height: 80px;
+    padding: 0 72px;
     line-height: 80px;
-    margin:  0 auto;
     justify-content: space-between;
+    z-index: 1000;
 }
 .header_nav a img {
     width: 80px;
@@ -75,12 +88,12 @@
 }
 .header_list {
     height: 100%;
+    align-items: center;
 }
 .header_list .header_item {
     padding: 0 20px;
     height: 20px;
     line-height: 20px;
-    margin-top: 25px;
     border-right: 1px solid var(--border);
     cursor: pointer;
 }
@@ -130,8 +143,10 @@
     width: 80%;
     margin: 0 auto;
     height: calc(100% - 80px);
-    /* border: 1px solid #000; */
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .header_banner img {
     position: absolute;
@@ -325,7 +340,6 @@
 /*  */
 .featured {
     width: 100%;
-    height: 1140px;
     background: var(--col-featurred);
 }
 .featured_nav {
@@ -351,9 +365,12 @@
 .featured_list {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6%;
 }
 .featured_list li {
-    width: calc((100% - 25px) / 2);
+    width: 47%;
     height: 350px;
     background: var(--col-white);
     box-shadow: 0 0 16px #0d2f3f3b;
@@ -362,10 +379,7 @@
     margin-bottom: 25px;
     float: left;
 }
-.featured_list li:nth-child(2),
-.featured_list li:nth-child(4) {
-    margin-left: 25px;
-}
+
 .featured_list li img {
     width: 42%;
     height: 100%;
@@ -457,7 +471,7 @@
     margin-left: 10px;
     transition: var(--tr-3s);
 }
-.featured_submit {
+.show-all, .hide-away {
     padding: 20px 35px;
     border-radius: 50px;
     background: var(--col-header_ItemBtn);
@@ -496,7 +510,6 @@
 .mentors_nav__right {
     margin-left: 100px;
     width: calc(100% - 55% - 100px);
-    height: 450px;
 }
 .mentors_navLeft__left,
 .mentors_navLeft__right {
@@ -847,13 +860,13 @@
     margin: auto;
 }
 .newSletter_button input {
-    padding: 16px 0 20px 15px;
+    padding: 16px;
     width: 300px;
     border-radius: 30px;
     margin-right: 30px;
     outline: none;
     border: 1px solid #dddddd54;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--col-headerBanner-p);
 }
 .newSletter_button input::placeholder {
@@ -988,14 +1001,12 @@ footer {
     top: 0;
     left: 0;
     z-index: 99999;
-    opacity: 0;
-    visibility: hidden;
-    transition: var(--tr-3s);
+    display: none;
+    transition: var(--tr-4s);
 }
 .modal_signIn.open_modal_signIn,
 .modal_register.open_modal_register {
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
 .close_modal_signIn,
 .close_modal_register {
@@ -1018,6 +1029,8 @@ footer {
     border-radius: 10px;
     margin: 120px auto;
     display: flex;
+    animation: openModal .5s linear;
+
 }
 .form_signIn__left,
 .register_form__left {
@@ -1042,14 +1055,14 @@ footer {
 }
 .form_signIn__left input,
 .register_form__left input {
-    width: 70%;
-    height: 50px;
+    width: 100%;
+    height: 46px;
     border-radius: 30px;
     border: 1px solid var(--col-border);
     outline: none;
     padding-left: 15px;
     background: transparent;
-    margin-top: 20px;
+    margin: 16px 0;
     color: var(--col-headerBanner-p);
     font-size: 16px;
     transition: var(--tr-3s);
@@ -1191,4 +1204,156 @@ footer {
 .register_form__right li .bg_btn p {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.4);
+}
+
+.form-group {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+
+.form-group.invalid {
+    position: relative;
+}
+
+span.form-message {
+    position: absolute;
+    bottom: -6px;
+    color: red;
+    left: 5%;
+}
+
+.form-group i{
+    position: absolute;
+    right: 18px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes openModal{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+        transform: rotate3d(13, 63, 29, 0deg);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+        transform: rotate3d(13, 63, 29, 360deg);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .header_list {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        max-width: 400px;
+        background: #fff;
+        flex-direction: column;
+        padding: 60px 0;
+        transform: translateX(-100%);
+        transition: var(--tr-3s);
+    }
+
+    .header_list .header_item {
+        border: none;
+        width: 100%;
+        height: 46px;
+        line-height: 46px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .header_list .header_item:hover{
+        background-color: rgb(185, 185, 185);
+    }
+
+    .list-icon {
+        display: block;
+        width: 57px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .list-icon i{
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .list-icon i:hover{
+        background: rgb(228, 228, 228);
+        transition: var(--tr-3s);
+    }
+
+    .close_header__list {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .close_header__list:hover {
+        background: #85858549;
+        transition: var(--tr-3s);
+    }
+
+    .banner_text_lg,
+    .header_banner p,
+    .mentors_navLeft__left,
+    .mentors_nav__right h1,
+    .mentors_nav__right p,
+    .form_signIn__right,
+    .register_form__right {
+        display: none;
+    }
+    
+    .header_banner a {
+        right: 6%;
+    }
+
+    .featured_list,
+    .mentors_nav,
+    .mentors_navLeft__right_xg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured_list li {
+        width: 100%;
+    }
+
+    .mentors_nav__right {
+        margin-left: 0;
+        width: auto;
+    }
+
+    .mentors_navLeft__right {
+        width: 100%;
+        margin: 0;
+    }
+
+    #form_signIn, #register_form {
+        width: 445px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .newSletter_button.row {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .newSletter_button input {
+        width: 100%;
+    }
 }
